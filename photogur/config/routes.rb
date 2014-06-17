@@ -54,3 +54,7 @@ Rails.application.routes.draw do
   #     resources :products
   #   end
 end
+
+Photogur::Application.routes.draw do
+  get 'pictures' => 'pictures#index'
+end
